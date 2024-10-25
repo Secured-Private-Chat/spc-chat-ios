@@ -35,7 +35,8 @@ abstract_target 'RiotPods' do
   pod 'KeychainAccess', '~> 4.2.2'
   pod 'WeakDictionary', '~> 2.0'
 
-  pod 'Sentry', '~> 7.15.0'
+#  pod 'Sentry', '~> 7.15.0'
+  pod 'Sentry', '~> 8.38.0'
 
   pod 'zxcvbn-ios'
 
@@ -61,6 +62,8 @@ abstract_target 'RiotPods' do
     pod 'DSWaveformImage', '~> 6.1.1'
     
     pod 'FLEX', '~> 5.22.10', :configurations => ['Debug'], :inhibit_warnings => true
+    pod 'Sentry', :git => 'https://github.com/getsentry/sentry-cocoa.git', :tag => '8.38.0'
+
 
     target 'RiotTests' do
       inherit! :search_paths
